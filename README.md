@@ -62,7 +62,7 @@ Each link is manually reviewed.
 ## 📸 Preview
 
 <p align="center">
-  <img src="h[ttps://bookmarks.love/preview.png](https://i.pinimg.com/736x/ce/52/5a/ce525a8983ab0ec1be6daefc945026bc.jpg)" width="70%" />
+  <img src="https://i.pinimg.com/736x/ce/52/5a/ce525a8983ab0ec1be6daefc945026bc.jpg" width="70%" />
 </p>
 
 ---
