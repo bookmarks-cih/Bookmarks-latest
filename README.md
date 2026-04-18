@@ -83,7 +83,7 @@ Quality > quantity.
 
 If you like the project:
 
-👉[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N81VG1DL)
+👉  [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N81VG1DL)
 
 ---
 
