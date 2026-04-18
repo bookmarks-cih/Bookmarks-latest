@@ -54,7 +54,7 @@ Each link is manually reviewed.
 
 ## 🚀 Stack
 
-- Static site (GitHub Pages)
+- Static site (Neocities)
 - HTML / CSS / JavaScript
 - Fast, minimal, no bloat
 
