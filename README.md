@@ -7,10 +7,11 @@
 <p align="center">
   <a href="https://bookmarks.love">
     <img src="https://img.shields.io/badge/Live-Website-0c84f3?style=for-the-badge&logo=google-chrome&logoColor=white" />
-  </a>
-  <img src="https://img.shields.io/github/stars/bookmarks-cih/bookmarks.github.io?style=for-the-badge" />
-  <img src="https://img.shields.io/github/last-commit/bookmarks-cih/bookmarks.github.io?style=for-the-badge" />
-  <img src="https://img.shields.io/github/license/bookmarks-cih/bookmarks.github.io?style=for-the-badge" />
+  <p align="center">
+  <img src="https://img.shields.io/badge/Curated-By%20Humans-0c84f3?style=for-the-badge&logo=bookstack&logoColor=white" />
+  <img src="https://img.shields.io/badge/No-SEO%20Spam-111111?style=for-the-badge&logo=ghost&logoColor=white" />
+  <img src="https://img.shields.io/badge/Privacy-First-0c84f3?style=for-the-badge&logo=protonmail&logoColor=white" />
+  <img src="https://img.shields.io/badge/Open-Source-111111?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
 ---
