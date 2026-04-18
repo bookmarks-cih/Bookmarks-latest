@@ -1,11 +1,7 @@
 <p align="center">
   <img src="assets/preview.png" alt="bookmarks.love preview" width="30%" />
 </p>
-
-<p align="center">
-  <a href="https://bookmarks.love">
-    <img src="https://img.shields.io/badge/Live-Website-0c84f3?style=for-the-badge&logo=google-chrome&logoColor=white" />
-  <p align="center">
+<br>
   <img src="https://img.shields.io/badge/Curated-By%20Humans-0c84f3?style=for-the-badge&logo=bookstack&logoColor=white" />
   <img src="https://img.shields.io/badge/No-SEO%20Spam-111111?style=for-the-badge&logo=ghost&logoColor=white" />
   <img src="https://img.shields.io/badge/Privacy-First-0c84f3?style=for-the-badge&logo=protonmail&logoColor=white" />
