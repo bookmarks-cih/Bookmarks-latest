@@ -83,7 +83,7 @@ Quality > quantity.
 
 If you like the project:
 
-👉 https://ko-fi.com/bookmarks
+👉[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N81VG1DL)
 
 ---
 
@@ -96,5 +96,3 @@ If you like the project:
 Créé avec ❤️ par @morneface  
 Projet Open Source - Tous droits réservés à l'auteur
 
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N81VG1DL)
