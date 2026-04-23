@@ -2,9 +2,9 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <title>About Us - Bookmarks</title>
+  <title>Terms of Service - Bookmarks</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Discover the story behind Bookmarks - A curated intelligence hub for the digital age.">
+  <meta name="description" content="Terms and Conditions for using Bookmarks - The curated intelligence hub for the digital age.">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -498,74 +498,42 @@
     .info-card h3 { font-size: 1.3rem; line-height: 1.2; margin: 0; }
     .info-card p { color: var(--text-soft); line-height: 1.7; font-size: 0.95rem; margin: 0; }
 
-    /* Grids */
-    .grid-values { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-    .grid-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-
-    /* Stats */
-    .stat-card {
-      padding: 24px; border-radius: var(--radius-md); text-align: center;
-      background: var(--glass-bg); border: 1px solid var(--glass-border);
-      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-      box-shadow: var(--shadow); transition: 0.25s ease;
+    /* Legal List Customization */
+    .legal-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 16px;
     }
-    .stat-card:hover { border-color: rgba(83,181,255,0.4); transform: translateY(-2px); }
-    .stat-number { font-family: "Space Grotesk"; font-size: 2.5rem; font-weight: 700; color: var(--brand-light); line-height: 1; }
-    .stat-label { font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 8px; }
-
-    /* Timeline */
-    .timeline { position: relative; margin: 40px 0; padding-left: 32px; }
-    .timeline::before {
-      content: ''; position: absolute; left: 8px; top: 0; bottom: 0;
-      width: 2px; background: linear-gradient(180deg, var(--brand), transparent);
-    }
-    .timeline-item { position: relative; margin-bottom: 32px; }
-    .timeline-item::before {
-      content: ''; position: absolute; left: -28px; top: 6px;
-      width: 12px; height: 12px; background: var(--bg);
-      border: 2px solid var(--brand); border-radius: 50%;
-      box-shadow: 0 0 12px rgba(12,132,243,0.4);
-      transition: background 0.4s ease;
-    }
-    [data-theme="light"] .timeline-item::before { background: var(--bg); }
     
-    .timeline-date { font-family: "Space Grotesk"; font-size: 0.9rem; font-weight: 600; color: var(--brand-light); margin-bottom: 8px; }
-    .timeline-content h4 { font-size: 1.2rem; margin-bottom: 8px; color: var(--text); }
-    .timeline-content p { font-size: 0.95rem; color: var(--text-soft); line-height: 1.7; }
+    .legal-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 14px;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
 
-    /* Buttons */
-    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: none; cursor: pointer; border-radius: 999px; font-weight: 700; font-size: 1rem; transition: 0.25s ease; text-decoration: none; font-family: inherit; }
-    .btn-primary { background: #fff; color: #081221; padding: 16px 32px; box-shadow: 0 12px 30px rgba(0,0,0,0.25); }
-    .btn-primary:hover { transform: translateY(-2px); background: #f1f8ff; }
-    .btn-secondary { background: rgba(255,255,255,0.10); color: #fff; padding: 16px 32px; border: 1px solid rgba(255,255,255,0.10); }
-    .btn-secondary:hover { background: rgba(255,255,255,0.16); transform: translateY(-1px); }
-    [data-theme="light"] .btn-primary { color: #fff; background: linear-gradient(135deg, var(--brand-light), var(--brand-dark)); }
-    [data-theme="light"] .btn-secondary { background: rgba(12, 132, 243, 0.08); color: var(--brand); border-color: rgba(12, 132, 243, 0.2); }
-
-    .contact-link { color: var(--brand-light); text-decoration: none; font-weight: 600; transition: all 0.3s ease; border-bottom: 1px solid transparent; }
-    .contact-link:hover { border-bottom-color: var(--brand-light); }
+    .legal-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      background-color: var(--brand-light);
+      border-radius: 50%;
+    }
 
     /* Footer */
-    .footer { border-top: 1px solid var(--border); padding: 42px 0; margin-top: 60px; }
+    .footer { padding: 42px 0 56px; border-top: 1px solid var(--border); margin-top: 60px; }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
     .footer-brand { display: flex; align-items: center; gap: 10px; color: var(--text-soft); font-size: 0.9rem; }
-    .footer-logo {
-      width: 34px; height: 34px; border-radius: 10px;
-      background: linear-gradient(135deg, var(--brand-light), var(--brand-dark));
-      display: grid; place-items: center; color: white;
-      box-shadow: 0 8px 20px rgba(12,132,243,0.2);
-    }
-    .footer-logo svg { width: 14px; height: 14px; }
-
-    .footer-links { display: flex; align-items: center; gap: 4px; }
-    .footer-link { padding: 10px 14px; border-radius: 999px; color: var(--text-dim); transition: 0.25s ease; font-size: 0.75rem; text-decoration: none; font-weight: 500; }
+    
+    .footer-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .footer-link { padding: 10px 14px; border-radius: 999px; color: var(--text-dim); transition: 0.25s ease; font-size: 0.88rem; text-decoration: none; }
     .footer-link:hover { color: var(--text); background: rgba(255,255,255,0.08); }
-    [data-theme="light"] .footer-link:hover { background: rgba(0,0,0,0.05); }
 
-    .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-    .footer-status { display: flex; align-items: center; font-size: 0.8rem; color: var(--text-dim); }
     .status-dot { width: 8px; height: 8px; border-radius: 999px; background: #22c55e; box-shadow: 0 0 10px rgba(34, 197, 94, 0.5); display: inline-block; margin-right: 8px; }
-    .footer-version { font-size: 0.7rem; color: var(--text-dim); padding: 4px 10px; background: var(--surface); border-radius: 6px; border: 1px solid var(--border); font-family: "Space Grotesk", sans-serif; font-weight: 500; }
 
     /* Desktop - show hamburger elements */
     @media (min-width: 769px) {
@@ -579,7 +547,6 @@
       .header { padding: 14px 0; margin-bottom: 24px; }
       .logo-text { font-size: 1.2rem; }
       .clock { display: none; }
-      .grid-values, .grid-stats { grid-template-columns: 1fr; }
       
       .hamburger-menu {
         top: 70px;
@@ -596,9 +563,9 @@
       .hamburger-icon svg { width: 18px; height: 18px; }
       .hamburger-item-title { font-size: 0.9rem; }
       .hamburger-item-desc { font-size: 0.7rem; }
-      .footer-inner { flex-direction: column; text-align: center; gap: 16px; }
-      .footer-right { align-items: center; }
-      .footer-links { flex-wrap: wrap; justify-content: center; }
+          
+      .footer-inner { flex-direction: column; text-align: center; gap: 24px; }
+      .footer-links { justify-content: center; }
     }
 
     :focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
@@ -620,8 +587,6 @@
     .section:nth-child(2) .glass-card { animation-delay: 0.05s; }
     .section:nth-child(2) .glass-card:nth-child(2) { animation-delay: 0.08s; }
     .section:nth-child(3) .glass-card { animation-delay: 0.12s; }
-    .section:nth-child(4) .glass-card { animation-delay: 0.16s; }
-    .section:nth-child(5) .glass-card { animation-delay: 0.2s; }
   </style>
 </head>
 <body>
@@ -690,112 +655,107 @@
         </button>
       </div>
       <div class="hamburger-grid">
-      <a href="docs.html" class="hamburger-item">
-        <div class="hamburger-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-          </svg>
-        </div>
-        <div class="hamburger-content">
-          <div class="hamburger-item-title">Docs</div>
-          <div class="hamburger-item-desc">Documentation & Resources</div>
-        </div>
-      </a>
-      <a href="files.html" class="hamburger-item">
-        <div class="hamburger-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
-        </div>
-        <div class="hamburger-content">
-          <div class="hamburger-item-title">Files</div>
-          <div class="hamburger-item-desc">Downloads & Software</div>
-        </div>
-      </a>
-      <a href="jobs.html" class="hamburger-item">
-        <div class="hamburger-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-          </svg>
-        </div>
-        <div class="hamburger-content">
-          <div class="hamburger-item-title">Jobs</div>
-          <div class="hamburger-item-desc">Career Opportunities</div>
-        </div>
-      </a>
-      <a href="creators.html" class="hamburger-item">
-        <div class="hamburger-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-          </svg>
-        </div>
-        <div class="hamburger-content">
-          <div class="hamburger-item-title">Creators</div>
-          <div class="hamburger-item-desc">Meet the Team</div>
-        </div>
-      </a>
-      <a href="news.html" class="hamburger-item">
-        <div class="hamburger-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Z"/>
-            <path d="M18 14h-8"/>
-            <path d="M15 18h-5"/>
-            <path d="M10 6h8v4h-8V6Z"/>
-          </svg>
-        </div>
-        <div class="hamburger-content">
-          <div class="hamburger-item-title">News</div>
-          <div class="hamburger-item-desc">Latest Updates</div>
-        </div>
-      </a>
-      
-      
-      <a href="privacy.html" class="hamburger-item">
-  <div class="hamburger-icon">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-      <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-    </svg>
-  </div>
-  <div class="hamburger-content">
-    <div class="hamburger-item-title">Privacy</div>
-    <div class="hamburger-item-desc">Privacy Policy</div>
-  </div>
-</a>
-      
-      <a href="terms.html" class="hamburger-item">
-        <div class="hamburger-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-          </svg>
-        </div>
-        <div class="hamburger-content">
-          <div class="hamburger-item-title">Terms</div>
-          <div class="hamburger-item-desc">Terms of Service</div>
-        </div>
-      </a>
-    </div>
+        <a href="index.html" class="hamburger-item">
+          <div class="hamburger-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9,22 9,12 15,12 15,22"/>
+            </svg>
+          </div>
+          <div class="hamburger-content">
+            <div class="hamburger-item-title">Home</div>
+            <div class="hamburger-item-desc">Main dashboard</div>
+          </div>
+        </a>
+        <a href="docs.html" class="hamburger-item">
+          <div class="hamburger-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <div class="hamburger-content">
+            <div class="hamburger-item-title">Docs</div>
+            <div class="hamburger-item-desc">Documentation & Resources</div>
+          </div>
+        </a>
+        <a href="files.html" class="hamburger-item">
+          <div class="hamburger-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </div>
+          <div class="hamburger-content">
+            <div class="hamburger-item-title">Files</div>
+            <div class="hamburger-item-desc">Downloads & Software</div>
+          </div>
+        </a>
+        <a href="news.html" class="hamburger-item">
+          <div class="hamburger-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Z"/>
+              <path d="M18 14h-8"/>
+              <path d="M15 18h-5"/>
+              <path d="M10 6h8v4h-8V6Z"/>
+            </svg>
+          </div>
+          <div class="hamburger-content">
+            <div class="hamburger-item-title">News</div>
+            <div class="hamburger-item-desc">Latest Updates</div>
+          </div>
+        </a>
+        <a href="jobs.html" class="hamburger-item">
+          <div class="hamburger-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </div>
+          <div class="hamburger-content">
+            <div class="hamburger-item-title">Jobs</div>
+            <div class="hamburger-item-desc">Career Opportunities</div>
+          </div>
+        </a>
+        <a href="privacy.html" class="hamburger-item">
+          <div class="hamburger-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <div class="hamburger-content">
+            <div class="hamburger-item-title">Privacy</div>
+            <div class="hamburger-item-desc">Privacy Policy</div>
+          </div>
+        </a>
+        <a href="terms.html" class="hamburger-item">
+          <div class="hamburger-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <div class="hamburger-content">
+            <div class="hamburger-item-title">Terms</div>
+            <div class="hamburger-item-desc">Terms & Conditions</div>
+          </div>
+        </a>
+      </div>
     </div>
 
     <main>
       <section class="hero">
         <div class="container">
-          <div class="hero-badge">About Us</div>
-          <h1>Curated Intelligence<br><span>for the Digital Age</span></h1>
+          <div class="hero-badge">Legal</div>
+          <h1>Terms of Service</h1>
           <p class="hero-subtitle">
-            A meticulously crafted directory designed to counter AI-biased search results, promote digital privacy, and provide reliable access to high-quality resources.
+            Last updated: January 2025. Please read these terms carefully before using the Bookmarks platform.
           </p>
         </div>
       </section>
@@ -804,103 +764,16 @@
         <div class="container">
           <div class="glass-card">
             <div class="section-head">
-              <div class="section-kicker">01. Our Mission</div>
-              <h2 class="section-title">Navigating the Noise</h2>
+              <div class="section-kicker">01. Agreement</div>
+              <h2 class="section-title">Acceptance of Terms</h2>
             </div>
             <div class="section-desc">
               <p>
-                In an era where search engines are increasingly influenced by artificial intelligence—often prioritizing commercial interests over relevance—<strong>Bookmarks</strong> emerges as a solution. This platform meticulously curates high-quality resources across diverse categories, offering a reliable alternative to AI-biased search results.
+                By accessing or using <strong>Bookmarks</strong> ("the Service"), you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you do not have permission to access the Service.
               </p>
               <p style="margin-top: 16px;">
-                As a personal initiative, <strong>Bookmarks</strong> is designed to help individuals navigate the digital landscape with confidence. We prioritize <strong>privacy</strong>, <strong>security</strong>, and <strong>anonymity</strong>, ensuring that every listed resource adheres to ethical standards. No gray-area promotions—just the best tools and services across a wide range of domains.
+                The Service is provided "as is" and "as available" without any warranties of any kind, either express or implied. We do not guarantee that the Service will be uninterrupted, secure, or error-free.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-head" style="text-align: center; margin-bottom: 32px;">
-            <div class="section-kicker">02. Core Values</div>
-            <h2 class="section-title">What We Stand For</h2>
-          </div>
-
-          <div class="grid-values">
-            <article class="glass-card info-card">
-              <div class="info-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                </svg>
-              </div>
-              <div>
-                <h3>Privacy First</h3>
-                <p>Every resource is evaluated for privacy compliance. We reject services that compromise user data or engage in surveillance practices.</p>
-              </div>
-            </article>
-
-            <article class="glass-card info-card">
-              <div class="info-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 6v6l4 2"/>
-                </svg>
-              </div>
-              <div>
-                <h3>Quality Over Quantity</h3>
-                <p>We curate selectively. Each entry is verified, tested, and evaluated before inclusion. No paid placements, no sponsored content.</p>
-              </div>
-            </article>
-
-            <article class="glass-card info-card">
-              <div class="info-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-                </svg>
-              </div>
-              <div>
-                <h3>Transparency</h3>
-                <p>Clear categorization, honest descriptions, and open methodology. Users deserve to know why resources are recommended.</p>
-              </div>
-            </article>
-
-            <article class="glass-card info-card">
-              <div class="info-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                </svg>
-              </div>
-              <div>
-                <h3>Community Driven</h3>
-                <p>Built by enthusiasts, for enthusiasts. Community feedback shapes our curation decisions and platform evolution.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-head" style="text-align: center;">
-            <div class="section-kicker">03. By The Numbers</div>
-            <h2 class="section-title">Platform Stats</h2>
-          </div>
-          <div class="grid-stats">
-            <div class="stat-card">
-              <div class="stat-number">500+</div>
-              <div class="stat-label">Curated Resources</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">24</div>
-              <div class="stat-label">Categories</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">100%</div>
-              <div class="stat-label">Privacy Verified</div>
             </div>
           </div>
         </div>
@@ -910,39 +783,75 @@
         <div class="container">
           <div class="glass-card">
             <div class="section-head">
-              <div class="section-kicker">04. Our Journey</div>
-              <h2 class="section-title">Timeline</h2>
+              <div class="section-kicker">02. Use of Service</div>
+              <h2 class="section-title">User Responsibilities</h2>
             </div>
-            
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-date">2023</div>
-                <div class="timeline-content">
-                  <h4>Project Inception</h4>
-                  <p>Started as a personal collection of verified resources, growing from a simple bookmark file to a structured directory.</p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-date">2024</div>
-                <div class="timeline-content">
-                  <h4>Platform Development</h4>
-                  <p>Built public interface, established categorization methodology, and implemented privacy-first hosting infrastructure.</p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-date">2025</div>
-                <div class="timeline-content">
-                  <h4>Community Expansion</h4>
-                  <p>Opened submission channels, integrated community feedback systems, and expanded to 500+ verified resources.</p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-date">2026</div>
-                <div class="timeline-content">
-                  <h4>Continuous Evolution</h4>
-                  <p>Ongoing refinement, new categories, and enhanced verification processes. The journey continues.</p>
-                </div>
-              </div>
+            <div class="section-desc">
+              <ul class="legal-list">
+                <li>You agree to use the Service only for lawful purposes and in accordance with these Terms.</li>
+                <li>You agree not to use the Service to transmit any material that is unlawful, harmful, threatening, abusive, defamatory, or otherwise objectionable.</li>
+                <li>Attempting to reverse engineer, decompile, or disassemble any part of the Service is strictly prohibited.</li>
+                <li>Automated access (bots, scrapers) without prior written consent is prohibited.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="glass-card">
+            <div class="section-head">
+              <div class="section-kicker">03. Content & Links</div>
+              <h2 class="section-title">Third-Party Resources</h2>
+            </div>
+            <div class="section-desc">
+              <p>
+                The Service functions as a curated directory. While we strive to verify resources, <strong>Bookmarks</strong> does not host the majority of content linked on the platform.
+              </p>
+              <ul class="legal-list">
+                <li>We are not responsible for the content, privacy policies, or practices of third-party websites.</li>
+                <li>Inclusion of a link does not imply endorsement. We do not warrant the accuracy or reliability of any information on third-party sites.</li>
+                <li>Visiting external links is at your own risk. We advise caution and the use of security tools.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="glass-card">
+            <div class="section-head">
+              <div class="section-kicker">04. Intellectual Property</div>
+              <h2 class="section-title">Copyrights & Ownership</h2>
+            </div>
+            <div class="section-desc">
+              <p>
+                The "Bookmarks" brand, logo, original code, and custom graphical elements are the intellectual property of the platform operators. You may not use our branding without written permission.
+              </p>
+              <p style="margin-top: 16px;">
+                If you believe that your intellectual property rights have been violated by content listed on our Service, please contact us immediately at <a href="mailto:bookmarks.love@outlook.com" class="contact-link">bookmarks.love@outlook.com</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="glass-card">
+            <div class="section-head">
+              <div class="section-kicker">05. Limitation</div>
+              <h2 class="section-title">Disclaimer of Liability</h2>
+            </div>
+            <div class="section-desc">
+              <p>
+                In no event shall <strong>Bookmarks</strong>, its operators, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your access to, or use of, the Service.
+              </p>
+              <p style="margin-top: 16px;">
+                We reserve the right to modify or discontinue the Service at any time without notice. We shall not be liable to you or any third party for any modification, suspension, or discontinuance of the Service.
+              </p>
             </div>
           </div>
         </div>
@@ -951,28 +860,26 @@
       <section class="section">
         <div class="container">
           <div class="glass-card" style="text-align: center;">
-            <div class="section-kicker">05. Get In Touch</div>
-            <h2 class="section-title" style="margin-bottom: 16px;">Contact Us</h2>
+            <div class="section-kicker">06. Changes</div>
+            <h2 class="section-title" style="margin-bottom: 16px;">Updates to Terms</h2>
             <p class="section-desc" style="margin: 0 auto 32px;">
-              We welcome suggestions, corrections, and collaboration inquiries. Reach out via: <br>
-              <a href="mailto:idritteris@proton.me" class="contact-link">idritteris@proton.me</a>
+              We reserve the right to update these Terms of Service at any time. Changes will be posted on this page with an updated revision date. Continued use of the Service after changes constitutes acceptance of the new terms.
             </p>
             
             <div class="hero-actions" style="justify-content: center; gap: 16px;">
-              <a href="hub.html" class="btn btn-primary">
+              <a href="index.html" class="btn btn-primary">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                  <polyline points="15 3 21 3 21 9"/>
-                  <line x1="10" y1="14" x2="21" y2="3"/>
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
                 </svg>
-                Visit Hub
+                Back Home
               </a>
-              <a href="mailto:idritteris@proton.me" class="btn btn-secondary">
+              <a href="privacy.html" class="btn btn-secondary">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
                 </svg>
-                Contact Us
+                Read Privacy
               </a>
             </div>
           </div>
@@ -983,8 +890,8 @@
     <footer class="footer">
       <div class="container footer-inner">
         <div class="footer-brand">
-          <div class="footer-logo">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <div class="brand-mark" style="width:34px;height:34px;border-radius:10px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
               <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
             </svg>
           </div>
@@ -994,23 +901,22 @@
         <div class="footer-links">
           <a class="footer-link" href="index.html">Home</a>
           <a class="footer-link" href="about.html">About</a>
+          <a class="footer-link" href="hub.html">Hub</a>
           <a class="footer-link" href="privacy.html">Privacy</a>
           <a class="footer-link" href="https://ko-fi.com/bookmarks" target="_blank" rel="noopener noreferrer">Support</a>
         </div>
         
-        <div class="footer-right">
-          <div class="footer-status">
-            <span class="status-dot"></span>
-            <span>All systems operational</span>
-          </div>
-          <span class="footer-version">v3.2 // About Module</span>
+        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 8px;">
+           <div style="display: flex; align-items: center; font-size: 0.8rem; color: var(--text-dim);">
+             <span class="status-dot"></span> All systems operational
+           </div>
+           <span style="font-size: 0.7rem; color: var(--text-dim); font-family: 'Space Grotesk';">v3.2</span>
         </div>
       </div>
     </footer>
   </div>
 
   <script>
-    // Hamburger menu elements
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const hamburgerMenu = document.getElementById('hamburger-menu');
     const hamburgerOverlay = document.getElementById('hamburger-overlay');
