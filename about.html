@@ -428,38 +428,6 @@
     .hamburger-item:hover { border-color: var(--brand); transform: translateY(-2px); }
     .hamburger-item:hover::before { opacity: 1; }
 
-    /* Blue button style for first menu item */
-    .hamburger-item--primary {
-      background: linear-gradient(135deg, var(--brand-light), var(--brand-dark));
-      border: 1px solid transparent;
-      box-shadow: 0 8px 24px rgba(12,132,243,0.35);
-    }
-
-    .hamburger-item--primary::before {
-      background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
-    }
-
-    .hamburger-item--primary:hover {
-      border-color: transparent;
-      box-shadow: 0 12px 32px rgba(12,132,243,0.45);
-      transform: translateY(-2px);
-    }
-
-    .hamburger-item--primary .hamburger-icon {
-      background: rgba(255,255,255,0.2);
-      box-shadow: none;
-    }
-
-    .hamburger-item--primary .hamburger-item-title {
-      color: #ffffff;
-    }
-
-    .hamburger-item--primary .hamburger-item-desc {
-      color: rgba(255,255,255,0.78);
-    }
-
-    .hamburger-item--primary:hover::before { opacity: 1; }
-
     .hamburger-icon {
       width: 42px;
       height: 42px;
@@ -578,26 +546,15 @@
     .contact-link:hover { border-bottom-color: var(--brand-light); }
 
     /* Footer */
-    .footer { border-top: 1px solid var(--border); padding: 42px 0; margin-top: 60px; }
+    .footer { padding: 42px 0 56px; border-top: 1px solid var(--border); margin-top: 60px; }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
     .footer-brand { display: flex; align-items: center; gap: 10px; color: var(--text-soft); font-size: 0.9rem; }
-    .footer-logo {
-      width: 34px; height: 34px; border-radius: 10px;
-      background: linear-gradient(135deg, var(--brand-light), var(--brand-dark));
-      display: grid; place-items: center; color: white;
-      box-shadow: 0 8px 20px rgba(12,132,243,0.2);
-    }
-    .footer-logo svg { width: 14px; height: 14px; }
-
-    .footer-links { display: flex; align-items: center; gap: 4px; }
-    .footer-link { padding: 10px 14px; border-radius: 999px; color: var(--text-dim); transition: 0.25s ease; font-size: 0.75rem; text-decoration: none; font-weight: 500; }
+    
+    .footer-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .footer-link { padding: 10px 14px; border-radius: 999px; color: var(--text-dim); transition: 0.25s ease; font-size: 0.88rem; text-decoration: none; }
     .footer-link:hover { color: var(--text); background: rgba(255,255,255,0.08); }
-    [data-theme="light"] .footer-link:hover { background: rgba(0,0,0,0.05); }
 
-    .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-    .footer-status { display: flex; align-items: center; font-size: 0.8rem; color: var(--text-dim); }
     .status-dot { width: 8px; height: 8px; border-radius: 999px; background: #22c55e; box-shadow: 0 0 10px rgba(34, 197, 94, 0.5); display: inline-block; margin-right: 8px; }
-    .footer-version { font-size: 0.7rem; color: var(--text-dim); padding: 4px 10px; background: var(--surface); border-radius: 6px; border: 1px solid var(--border); font-family: "Space Grotesk", sans-serif; font-weight: 500; }
 
     /* Desktop - show hamburger elements */
     @media (min-width: 769px) {
@@ -628,9 +585,9 @@
       .hamburger-icon svg { width: 18px; height: 18px; }
       .hamburger-item-title { font-size: 0.9rem; }
       .hamburger-item-desc { font-size: 0.7rem; }
-      .footer-inner { flex-direction: column; text-align: center; gap: 16px; }
-      .footer-right { align-items: center; }
-      .footer-links { flex-wrap: wrap; justify-content: center; }
+          
+      .footer-inner { flex-direction: column; text-align: center; gap: 24px; }
+      .footer-links { justify-content: center; }
     }
 
     :focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
@@ -722,30 +679,43 @@
         </button>
       </div>
       <div class="hamburger-grid">
-        <a href="hub.html" class="hamburger-item hamburger-item--primary">
+        <a href="index.html" class="hamburger-item">
           <div class="hamburger-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9,22 9,12 15,12 15,22"/>
             </svg>
           </div>
           <div class="hamburger-content">
-            <div class="hamburger-item-title">Explore Hub</div>
-            <div class="hamburger-item-desc">Browse all curated resources</div>
+            <div class="hamburger-item-title">Home</div>
+            <div class="hamburger-item-desc">Main dashboard</div>
           </div>
         </a>
-        <a href="https://bookmarks.love/join" class="hamburger-item">
+        <a href="docs.html" class="hamburger-item">
           <div class="hamburger-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="8.5" cy="7" r="4"/>
-              <line x1="20" y1="8" x2="20" y2="14"/>
-              <line x1="23" y1="11" x2="17" y2="11"/>
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
             </svg>
           </div>
           <div class="hamburger-content">
-            <div class="hamburger-item-title">Become a Curator</div>
-            <div class="hamburger-item-desc">Join our curation team</div>
+            <div class="hamburger-item-title">Docs</div>
+            <div class="hamburger-item-desc">Documentation & Resources</div>
+          </div>
+        </a>
+        <a href="files.html" class="hamburger-item">
+          <div class="hamburger-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </div>
+          <div class="hamburger-content">
+            <div class="hamburger-item-title">Files</div>
+            <div class="hamburger-item-desc">Downloads & Software</div>
           </div>
         </a>
         <a href="news.html" class="hamburger-item">
@@ -759,32 +729,45 @@
           </div>
           <div class="hamburger-content">
             <div class="hamburger-item-title">News</div>
-            <div class="hamburger-item-desc">Latest updates & announcements</div>
+            <div class="hamburger-item-desc">Latest Updates</div>
           </div>
         </a>
-        <a href="about.html" class="hamburger-item">
+        <a href="jobs.html" class="hamburger-item">
           <div class="hamburger-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="12" y1="16" x2="12" y2="12"/>
-              <line x1="12" y1="8" x2="12.01" y2="8"/>
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
             </svg>
           </div>
           <div class="hamburger-content">
-            <div class="hamburger-item-title">About</div>
-            <div class="hamburger-item-desc">Our mission & story</div>
+            <div class="hamburger-item-title">Jobs</div>
+            <div class="hamburger-item-desc">Career Opportunities</div>
           </div>
         </a>
-        <a href="mailto:bookmarks.love@outlook.com" class="hamburger-item">
+        <a href="privacy.html" class="hamburger-item">
           <div class="hamburger-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
             </svg>
           </div>
           <div class="hamburger-content">
-            <div class="hamburger-item-title">Contact</div>
-            <div class="hamburger-item-desc">bookmarks.love@outlook.com</div>
+            <div class="hamburger-item-title">Privacy</div>
+            <div class="hamburger-item-desc">Privacy Policy</div>
+          </div>
+        </a>
+        <a href="terms.html" class="hamburger-item">
+          <div class="hamburger-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <div class="hamburger-content">
+            <div class="hamburger-item-title">Terms</div>
+            <div class="hamburger-item-desc">Terms & Conditions</div>
           </div>
         </a>
       </div>
@@ -984,8 +967,8 @@
     <footer class="footer">
       <div class="container footer-inner">
         <div class="footer-brand">
-          <div class="footer-logo">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <div class="brand-mark" style="width:34px;height:34px;border-radius:10px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
               <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
             </svg>
           </div>
@@ -995,16 +978,16 @@
         <div class="footer-links">
           <a class="footer-link" href="index.html">Home</a>
           <a class="footer-link" href="about.html">About</a>
+          <a class="footer-link" href="hub.html">Hub</a>
           <a class="footer-link" href="privacy.html">Privacy</a>
           <a class="footer-link" href="https://ko-fi.com/bookmarks" target="_blank" rel="noopener noreferrer">Support</a>
         </div>
         
-        <div class="footer-right">
-          <div class="footer-status">
-            <span class="status-dot"></span>
-            <span>All systems operational</span>
-          </div>
-          <span class="footer-version">v3.2 // About Module</span>
+        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 8px;">
+           <div style="display: flex; align-items: center; font-size: 0.8rem; color: var(--text-dim);">
+             <span class="status-dot"></span> All systems operational
+           </div>
+           <span style="font-size: 0.7rem; color: var(--text-dim); font-family: 'Space Grotesk';">v3.2</span>
         </div>
       </div>
     </footer>
